@@ -19,6 +19,9 @@ const setMessage = (element, text, isError = false) => {
 const saveToken = (token) => localStorage.setItem("jwt_token", token);
 const getToken = () => localStorage.getItem("jwt_token");
 const clearToken = () => localStorage.removeItem("jwt_token");
+const saveRefreshToken = (token) => localStorage.setItem("refresh_token", token);
+const getRefreshToken = () => localStorage.getItem("refresh_token");
+const clearRefreshToken = () => localStorage.removeItem("refresh_token");
 
 const setTab = (activeTab) => {
   const signupActive = activeTab === "signup";
@@ -50,6 +53,51 @@ const apiRequest = async (path, options = {}) => {
   return payload;
 };
 
+const refreshAccessToken = async () => {
+  const refreshToken = getRefreshToken();
+  if (!refreshToken) {
+    throw new Error("No refresh token found. Please login again.");
+  }
+
+  const result = await apiRequest("/auth/refresh", {
+    method: "POST",
+    body: JSON.stringify({ refreshToken })
+  });
+
+  saveToken(result.token);
+  if (result.refreshToken) {
+    saveRefreshToken(result.refreshToken);
+  }
+
+  return result.token;
+};
+
+const apiRequestWithAutoRefresh = async (path, options = {}) => {
+  const token = getToken();
+  try {
+    return await apiRequest(path, {
+      ...options,
+      headers: {
+        ...(options.headers || {}),
+        Authorization: `Bearer ${token}`
+      }
+    });
+  } catch (error) {
+    if (!error.message.toLowerCase().includes("token")) {
+      throw error;
+    }
+
+    const newToken = await refreshAccessToken();
+    return apiRequest(path, {
+      ...options,
+      headers: {
+        ...(options.headers || {}),
+        Authorization: `Bearer ${newToken}`
+      }
+    });
+  }
+};
+
 signupForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   setMessage(authMessage, "Creating account...");
@@ -67,6 +115,7 @@ signupForm.addEventListener("submit", async (event) => {
     });
 
     saveToken(result.token);
+    saveRefreshToken(result.refreshToken);
     setMessage(authMessage, `Welcome ${result.user.name}. JWT saved.`, false);
     signupForm.reset();
   } catch (error) {
@@ -90,6 +139,7 @@ loginForm.addEventListener("submit", async (event) => {
     });
 
     saveToken(result.token);
+    saveRefreshToken(result.refreshToken);
     setMessage(authMessage, `Signed in as ${result.user.email}`, false);
     loginForm.reset();
   } catch (error) {
@@ -100,8 +150,7 @@ loginForm.addEventListener("submit", async (event) => {
 syncForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const token = getToken();
-  if (!token) {
+  if (!getToken()) {
     setMessage(syncMessage, "Login/signup first to get a JWT token.", true);
     return;
   }
@@ -121,9 +170,8 @@ syncForm.addEventListener("submit", async (event) => {
       }
     };
 
-    const result = await apiRequest("/profiles/sync", {
+    const result = await apiRequestWithAutoRefresh("/profiles/sync", {
       method: "POST",
-      headers: { Authorization: `Bearer ${token}` },
       body: JSON.stringify(body)
     });
 
@@ -135,8 +183,7 @@ syncForm.addEventListener("submit", async (event) => {
 });
 
 fetchLatestBtn.addEventListener("click", async () => {
-  const token = getToken();
-  if (!token) {
+  if (!getToken()) {
     setMessage(syncMessage, "No JWT token found. Please login first.", true);
     return;
   }
@@ -144,9 +191,8 @@ fetchLatestBtn.addEventListener("click", async () => {
   setMessage(syncMessage, "Fetching latest profile...");
 
   try {
-    const result = await apiRequest("/profiles/latest", {
-      method: "GET",
-      headers: { Authorization: `Bearer ${token}` }
+    const result = await apiRequestWithAutoRefresh("/profiles/latest", {
+      method: "GET"
     });
 
     latestOutput.textContent = JSON.stringify(result, null, 2);
@@ -156,9 +202,22 @@ fetchLatestBtn.addEventListener("click", async () => {
   }
 });
 
-logoutBtn.addEventListener("click", () => {
+logoutBtn.addEventListener("click", async () => {
+  const refreshToken = getRefreshToken();
+  if (refreshToken) {
+    try {
+      await apiRequest("/auth/logout", {
+        method: "POST",
+        body: JSON.stringify({ refreshToken })
+      });
+    } catch {
+      // Force local logout even if network call fails.
+    }
+  }
+
   clearToken();
-  setMessage(authMessage, "Token removed from browser storage.", false);
+  clearRefreshToken();
+  setMessage(authMessage, "Logged out and tokens removed.", false);
   setMessage(syncMessage, "", false);
 });
 

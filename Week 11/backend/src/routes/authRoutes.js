@@ -1,19 +1,14 @@
 import express from "express";
 import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
 import { User } from "../models/User.js";
+import {
+  issueAccessToken,
+  issueRefreshToken,
+  revokeRefreshToken,
+  verifyRefreshToken
+} from "../utils/tokens.js";
 
 const router = express.Router();
-
-const buildToken = (user) =>
-  jwt.sign(
-    { email: user.email },
-    process.env.JWT_SECRET,
-    {
-      subject: user._id.toString(),
-      expiresIn: process.env.JWT_EXPIRES_IN || "2h"
-    }
-  );
 
 router.post("/signup", async (req, res) => {
   try {
@@ -36,9 +31,11 @@ router.post("/signup", async (req, res) => {
       passwordHash
     });
 
-    const token = buildToken(user);
+    const token = issueAccessToken(user);
+    const refreshToken = await issueRefreshToken(user);
     return res.status(201).json({
       token,
+      refreshToken,
       user: { id: user._id, name: user.name, email: user.email }
     });
   } catch (error) {
@@ -65,13 +62,59 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    const token = buildToken(user);
+    const token = issueAccessToken(user);
+    const refreshToken = await issueRefreshToken(user);
     return res.status(200).json({
       token,
+      refreshToken,
       user: { id: user._id, name: user.name, email: user.email }
     });
   } catch (error) {
     return res.status(500).json({ message: "Login failed", error: error.message });
+  }
+});
+
+router.post("/refresh", async (req, res) => {
+  try {
+    const { refreshToken } = req.body;
+    if (!refreshToken) {
+      return res.status(400).json({ message: "refreshToken is required" });
+    }
+
+    const { payload, tokenRecord } = await verifyRefreshToken(refreshToken);
+    const user = await User.findById(payload.sub);
+    if (!user) {
+      return res.status(401).json({ message: "User not found for refresh token" });
+    }
+
+    await revokeRefreshToken(tokenRecord);
+
+    const token = issueAccessToken(user);
+    const newRefreshToken = await issueRefreshToken(user, tokenRecord._id);
+
+    return res.status(200).json({
+      token,
+      refreshToken: newRefreshToken,
+      user: { id: user._id, name: user.name, email: user.email }
+    });
+  } catch (error) {
+    return res.status(401).json({ message: "Refresh failed", error: error.message });
+  }
+});
+
+router.post("/logout", async (req, res) => {
+  try {
+    const { refreshToken } = req.body;
+    if (!refreshToken) {
+      return res.status(400).json({ message: "refreshToken is required" });
+    }
+
+    const { tokenRecord } = await verifyRefreshToken(refreshToken);
+    await revokeRefreshToken(tokenRecord);
+
+    return res.status(200).json({ message: "Logged out successfully" });
+  } catch {
+    return res.status(200).json({ message: "Logged out successfully" });
   }
 });
 

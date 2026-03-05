@@ -3,8 +3,10 @@
 This week contains a full-stack implementation with:
 - Frontend login/signup interface
 - JWT-based authentication
+- Refresh token rotation and logout revocation
 - Backend API with MongoDB
 - AES-256-GCM encrypted wearable profile storage
+- Auth rate limiting for brute-force protection
 
 ## Folder Structure
 
@@ -26,6 +28,7 @@ This week contains a full-stack implementation with:
    You can also set it to `mongodb://localhost:27017/` if your MongoDB instance handles DB selection elsewhere.
 5. Set secure values for:
    - `JWT_SECRET`
+   - `REFRESH_TOKEN_SECRET`
    - `ENCRYPTION_KEY` (64 hex chars)
 6. Start backend:
    ```bash
@@ -46,6 +49,8 @@ Backend runs on `http://localhost:5000`.
 
 - `POST /api/auth/signup`
 - `POST /api/auth/login`
+- `POST /api/auth/refresh`
+- `POST /api/auth/logout`
 - `POST /api/profiles/sync` (Bearer token required)
 - `GET /api/profiles/latest` (Bearer token required)
 - `GET /api/health`
@@ -53,5 +58,7 @@ Backend runs on `http://localhost:5000`.
 ## Security Notes
 
 - User passwords are hashed using `bcryptjs`.
-- JWT is required for profile sync/retrieval.
+- Access JWT is required for profile sync/retrieval.
+- Refresh tokens are rotated on `/api/auth/refresh` and revoked on `/api/auth/logout`.
+- `/api/auth/*` routes are protected by request rate limiting.
 - Wearable profile payload is encrypted at rest using AES-256-GCM before saving in MongoDB.
