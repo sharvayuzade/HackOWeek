@@ -1,0 +1,732 @@
+date,energy_kwh,event,day_of_week,month,is_weekend,is_exam_period,rolling_avg
+2024-01-01,164.52,Winter Break,Monday,January,False,False,
+2024-01-02,183.96,Winter Break,Tuesday,January,False,False,
+2024-01-03,176.58,Winter Break,Wednesday,January,False,False,
+2024-01-04,172.08,Winter Break,Thursday,January,False,False,
+2024-01-05,157.14,Winter Break,Friday,January,False,False,
+2024-01-06,94.28,Winter Break,Saturday,January,True,False,
+2024-01-07,61.53,Winter Break,Sunday,January,True,False,144.29857142857142
+2024-01-08,181.11,Winter Break,Monday,January,False,False,146.66857142857143
+2024-01-09,172.16,Winter Break,Tuesday,January,False,False,144.98285714285714
+2024-01-10,585.91,Regular,Wednesday,January,False,False,203.45857142857145
+2024-01-11,508.57,Regular,Thursday,January,False,False,251.52857142857144
+2024-01-12,615.36,Regular,Friday,January,False,False,316.98857142857145
+2024-01-13,359.94,Regular,Saturday,January,True,False,354.94
+2024-01-14,212.06,Regular,Sunday,January,True,False,376.4442857142857
+2024-01-15,526.71,Regular,Monday,January,False,False,425.8157142857143
+2024-01-16,526.88,Regular,Tuesday,January,False,False,476.48999999999995
+2024-01-17,540.48,Regular,Wednesday,January,False,False,470.0
+2024-01-18,565.29,Regular,Thursday,January,False,False,478.1028571428571
+2024-01-19,554.84,Regular,Friday,January,False,False,469.45714285714286
+2024-01-20,323.41,Regular,Saturday,January,True,False,464.23857142857145
+2024-01-21,230.03,Regular,Sunday,January,True,False,466.80571428571426
+2024-01-22,521.94,Regular,Monday,January,False,False,466.12428571428575
+2024-01-23,539.12,Regular,Tuesday,January,False,False,467.8728571428572
+2024-01-24,547.47,Regular,Wednesday,January,False,False,468.8714285714286
+2024-01-25,557.56,Regular,Thursday,January,False,False,467.7671428571429
+2024-01-26,594.58,Regular,Friday,January,False,False,473.44428571428574
+2024-01-27,317.23,Regular,Saturday,January,True,False,472.5614285714286
+2024-01-28,225.64,Regular,Sunday,January,True,False,471.9342857142857
+2024-01-29,572.9,Regular,Monday,January,False,False,479.2142857142857
+2024-01-30,511.48,Regular,Tuesday,January,False,False,475.2657142857143
+2024-01-31,574.6,Regular,Wednesday,January,False,False,479.14142857142855
+2024-02-01,525.43,Regular Semester,Thursday,February,False,False,474.5514285714285
+2024-02-02,513.57,Regular Semester,Friday,February,False,False,462.9785714285714
+2024-02-03,367.8,Regular Semester,Saturday,February,True,False,470.20285714285717
+2024-02-04,245.95,Regular Semester,Sunday,February,True,False,473.1042857142857
+2024-02-05,597.19,Regular Semester,Monday,February,False,False,476.57428571428574
+2024-02-06,540.52,Regular Semester,Tuesday,February,False,False,480.72285714285715
+2024-02-07,517.24,Regular Semester,Wednesday,February,False,False,472.52857142857147
+2024-02-08,583.23,Regular Semester,Thursday,February,False,False,480.78571428571433
+2024-02-09,555.77,Regular Semester,Friday,February,False,False,486.81428571428575
+2024-02-10,311.99,Regular Semester,Saturday,February,True,False,478.84142857142854
+2024-02-11,224.78,Regular Semester,Sunday,February,True,False,475.81714285714287
+2024-02-12,510.12,Regular Semester,Monday,February,False,False,463.37857142857143
+2024-02-13,608.55,Regular Semester,Tuesday,February,False,False,473.0971428571429
+2024-02-14,535.36,Regular Semester,Wednesday,February,False,False,475.68571428571425
+2024-02-15,580.78,Regular Semester,Thursday,February,False,False,475.3357142857143
+2024-02-16,541.32,Regular Semester,Friday,February,False,False,473.27142857142854
+2024-02-17,338.85,Regular Semester,Saturday,February,True,False,477.10857142857145
+2024-02-18,227.1,Regular Semester,Sunday,February,True,False,477.44
+2024-02-19,527.05,Regular Semester,Monday,February,False,False,479.85857142857145
+2024-02-20,615.33,Regular Semester,Tuesday,February,False,False,480.82714285714286
+2024-02-21,593.45,Regular Semester,Wednesday,February,False,False,489.1257142857143
+2024-02-22,611.94,Regular Semester,Thursday,February,False,False,493.57714285714286
+2024-02-23,606.92,Regular Semester,Friday,February,False,False,502.9485714285715
+2024-02-24,344.11,Regular Semester,Saturday,February,True,False,503.7
+2024-02-25,243.98,Regular Semester,Sunday,February,True,False,506.1114285714286
+2024-02-26,516.21,Regular Semester,Monday,February,False,False,504.56285714285724
+2024-02-27,528.3,Regular Semester,Tuesday,February,False,False,492.13
+2024-02-28,511.34,Regular Semester,Wednesday,February,False,False,480.40000000000003
+2024-02-29,542.85,Regular,Thursday,February,False,False,470.53000000000003
+2024-03-01,439.98,Regular,Friday,March,False,False,446.68142857142857
+2024-03-02,257.65,Regular,Saturday,March,True,False,434.33
+2024-03-03,191.83,Regular,Sunday,March,True,False,426.88
+2024-03-04,437.11,Regular,Monday,March,False,False,415.58
+2024-03-05,430.28,Regular,Tuesday,March,False,False,401.57714285714286
+2024-03-06,453.84,Regular,Wednesday,March,False,False,393.36285714285714
+2024-03-07,417.68,Regular,Thursday,March,False,False,375.4814285714286
+2024-03-08,477.2,Regular,Friday,March,False,False,380.79857142857145
+2024-03-09,247.03,Regular,Saturday,March,True,False,379.28142857142853
+2024-03-10,404.66,Midterm Exams,Sunday,March,True,True,409.6857142857143
+2024-03-11,726.89,Midterm Exams,Monday,March,False,True,451.0828571428571
+2024-03-12,850.77,Midterm Exams,Tuesday,March,False,True,511.15285714285716
+2024-03-13,841.54,Midterm Exams,Wednesday,March,False,True,566.5385714285715
+2024-03-14,726.59,Midterm Exams,Thursday,March,False,True,610.6685714285715
+2024-03-15,757.84,Midterm Exams,Friday,March,False,True,650.76
+2024-03-16,509.2,Midterm Exams,Saturday,March,True,True,688.2128571428572
+2024-03-17,328.41,Midterm Exams,Sunday,March,True,True,677.3199999999999
+2024-03-18,781.31,Midterm Exams,Monday,March,False,True,685.0942857142857
+2024-03-19,834.17,Midterm Exams,Tuesday,March,False,True,682.722857142857
+2024-03-20,771.98,Midterm Exams,Wednesday,March,False,True,672.7857142857143
+2024-03-21,838.75,Midterm Exams,Thursday,March,False,True,688.8085714285714
+2024-03-22,455.51,Regular,Friday,March,False,False,645.6185714285714
+2024-03-23,284.63,Regular,Saturday,March,True,False,613.5371428571428
+2024-03-24,179.78,Regular,Sunday,March,True,False,592.3042857142857
+2024-03-25,452.05,Regular,Monday,March,False,False,545.2671428571429
+2024-03-26,443.48,Regular,Tuesday,March,False,False,489.4542857142857
+2024-03-27,407.29,Regular,Wednesday,March,False,False,437.35571428571427
+2024-03-28,414.71,Regular,Thursday,March,False,False,376.7785714285714
+2024-03-29,407.83,Regular,Friday,March,False,False,369.96714285714285
+2024-03-30,277.37,Regular,Saturday,March,True,False,368.93
+2024-03-31,173.32,Regular,Sunday,March,True,False,368.0071428571428
+2024-04-01,450.77,Regular Semester,Monday,April,False,False,367.82428571428574
+2024-04-02,486.68,Regular Semester,Tuesday,April,False,False,373.9957142857143
+2024-04-03,427.44,Regular Semester,Wednesday,April,False,False,376.8742857142857
+2024-04-04,441.93,Regular Semester,Thursday,April,False,False,380.7628571428572
+2024-04-05,473.0,Regular Semester,Friday,April,False,False,390.0728571428572
+2024-04-06,255.36,Regular Semester,Saturday,April,True,False,386.92857142857144
+2024-04-07,164.77,Regular Semester,Sunday,April,True,False,385.7071428571429
+2024-04-08,431.08,Regular Semester,Monday,April,False,False,382.89428571428573
+2024-04-09,419.51,Regular Semester,Tuesday,April,False,False,373.2985714285714
+2024-04-10,488.67,Regular Semester,Wednesday,April,False,False,382.04571428571427
+2024-04-11,477.73,Regular Semester,Thursday,April,False,False,387.15999999999997
+2024-04-12,462.01,Regular Semester,Friday,April,False,False,385.59000000000003
+2024-04-13,290.06,Regular Semester,Saturday,April,True,False,390.54714285714283
+2024-04-14,190.93,Regular Semester,Sunday,April,True,False,394.28428571428566
+2024-04-15,421.79,Regular Semester,Monday,April,False,False,392.95714285714286
+2024-04-16,485.33,Regular Semester,Tuesday,April,False,False,402.36
+2024-04-17,453.54,Regular Semester,Wednesday,April,False,False,397.3414285714286
+2024-04-18,477.67,Regular Semester,Thursday,April,False,False,397.3328571428571
+2024-04-19,485.65,Regular Semester,Friday,April,False,False,400.71
+2024-04-20,260.17,Regular Semester,Saturday,April,True,False,396.44
+2024-04-21,165.96,Regular Semester,Sunday,April,True,False,392.8728571428572
+2024-04-22,425.51,Regular Semester,Monday,April,False,False,393.4042857142857
+2024-04-23,443.44,Regular Semester,Tuesday,April,False,False,387.42
+2024-04-24,478.62,Regular Semester,Wednesday,April,False,False,391.0028571428571
+2024-04-25,482.47,Regular Semester,Thursday,April,False,False,391.68857142857144
+2024-04-26,405.63,Regular Semester,Friday,April,False,False,380.25714285714287
+2024-04-27,270.58,Regular Semester,Saturday,April,True,False,381.7442857142857
+2024-04-28,177.03,Regular Semester,Sunday,April,True,False,383.3257142857143
+2024-04-29,424.99,Regular,Monday,April,False,False,383.2514285714286
+2024-04-30,415.79,Regular,Tuesday,April,False,False,379.3014285714286
+2024-05-01,435.39,Regular,Wednesday,May,False,False,373.12571428571425
+2024-05-02,489.86,Regular,Thursday,May,False,False,374.18142857142857
+2024-05-03,434.09,Regular,Friday,May,False,False,378.2471428571429
+2024-05-04,271.01,Regular,Saturday,May,True,False,378.3085714285714
+2024-05-05,405.34,Final Exams,Sunday,May,True,True,410.9242857142857
+2024-05-06,984.55,Final Exams,Monday,May,False,True,490.8614285714285
+2024-05-07,844.65,Final Exams,Tuesday,May,False,True,552.1271428571429
+2024-05-08,841.98,Final Exams,Wednesday,May,False,True,610.2114285714287
+2024-05-09,815.45,Final Exams,Thursday,May,False,True,656.7242857142857
+2024-05-10,863.01,Final Exams,Friday,May,False,True,717.9985714285714
+2024-05-11,559.9,Final Exams,Saturday,May,True,True,759.2685714285714
+2024-05-12,364.37,Final Exams,Sunday,May,True,True,753.4157142857144
+2024-05-13,907.57,Final Exams,Monday,May,False,True,742.4185714285715
+2024-05-14,851.82,Final Exams,Tuesday,May,False,True,743.4428571428571
+2024-05-15,914.26,Final Exams,Wednesday,May,False,True,753.7685714285715
+2024-05-16,915.36,Final Exams,Thursday,May,False,True,768.0414285714287
+2024-05-17,913.11,Final Exams,Friday,May,False,True,775.1985714285714
+2024-05-18,543.99,Final Exams,Saturday,May,True,True,772.9257142857142
+2024-05-19,411.77,Final Exams,Sunday,May,True,True,779.6971428571429
+2024-05-20,421.79,Regular,Monday,May,False,False,710.3000000000001
+2024-05-21,408.67,Regular,Tuesday,May,False,False,646.9928571428572
+2024-05-22,458.18,Regular,Wednesday,May,False,False,581.8385714285715
+2024-05-23,465.98,Regular,Thursday,May,False,False,517.6414285714286
+2024-05-24,406.49,Regular,Friday,May,False,False,445.26714285714286
+2024-05-25,270.65,Regular,Saturday,May,True,False,406.21857142857147
+2024-05-26,170.15,Regular,Sunday,May,True,False,371.7014285714286
+2024-05-27,463.07,Regular,Monday,May,False,False,377.59857142857146
+2024-05-28,420.69,Regular,Tuesday,May,False,False,379.3157142857143
+2024-05-29,467.18,Regular,Wednesday,May,False,False,380.6014285714286
+2024-05-30,439.81,Regular,Thursday,May,False,False,376.86285714285714
+2024-05-31,489.31,Regular,Friday,May,False,False,388.69428571428574
+2024-06-01,144.0,Summer Break,Saturday,June,True,False,370.6014285714286
+2024-06-02,100.21,Summer Break,Sunday,June,True,False,360.61
+2024-06-03,238.75,Summer Break,Monday,June,False,False,328.56428571428575
+2024-06-04,280.73,Summer Break,Tuesday,June,False,False,308.57000000000005
+2024-06-05,278.28,Summer Break,Wednesday,June,False,False,281.5842857142857
+2024-06-06,246.22,Summer Break,Thursday,June,False,False,253.92857142857142
+2024-06-07,267.03,Summer Break,Friday,June,False,False,222.17428571428573
+2024-06-08,165.1,Summer Break,Saturday,June,True,False,225.18857142857138
+2024-06-09,104.64,Summer Break,Sunday,June,True,False,225.82142857142858
+2024-06-10,260.28,Summer Break,Monday,June,False,False,228.89714285714285
+2024-06-11,245.39,Summer Break,Tuesday,June,False,False,223.84857142857143
+2024-06-12,237.69,Summer Break,Wednesday,June,False,False,218.04999999999998
+2024-06-13,279.31,Summer Break,Thursday,June,False,False,222.77714285714288
+2024-06-14,279.47,Summer Break,Friday,June,False,False,224.55428571428573
+2024-06-15,159.38,Summer Break,Saturday,June,True,False,223.73714285714286
+2024-06-16,100.17,Summer Break,Sunday,June,True,False,223.09857142857143
+2024-06-17,250.95,Summer Break,Monday,June,False,False,221.7657142857143
+2024-06-18,270.44,Summer Break,Tuesday,June,False,False,225.34428571428572
+2024-06-19,279.3,Summer Break,Wednesday,June,False,False,231.28857142857143
+2024-06-20,278.78,Summer Break,Thursday,June,False,False,231.2128571428572
+2024-06-21,273.23,Summer Break,Friday,June,False,False,230.32142857142858
+2024-06-22,159.66,Summer Break,Saturday,June,True,False,230.36142857142858
+2024-06-23,94.89,Summer Break,Sunday,June,True,False,229.60714285714286
+2024-06-24,241.24,Summer Break,Monday,June,False,False,228.22000000000003
+2024-06-25,279.38,Summer Break,Tuesday,June,False,False,229.49714285714285
+2024-06-26,264.26,Summer Break,Wednesday,June,False,False,227.3485714285714
+2024-06-27,233.35,Summer Break,Thursday,June,False,False,220.85857142857142
+2024-06-28,238.13,Summer Break,Friday,June,False,False,215.84428571428572
+2024-06-29,320.65,Regular,Saturday,June,True,False,238.84285714285716
+2024-06-30,186.51,Regular,Sunday,June,True,False,251.93142857142857
+2024-07-01,241.2,Summer Break,Monday,July,False,False,251.92571428571426
+2024-07-02,261.27,Summer Break,Tuesday,July,False,False,249.3385714285714
+2024-07-03,268.68,Summer Break,Wednesday,July,False,False,249.97
+2024-07-04,266.61,Summer Break,Thursday,July,False,False,254.72142857142853
+2024-07-05,244.48,Summer Break,Friday,July,False,False,255.6285714285714
+2024-07-06,161.84,Summer Break,Saturday,July,True,False,232.9414285714286
+2024-07-07,98.06,Summer Break,Sunday,July,True,False,220.30571428571426
+2024-07-08,249.71,Summer Break,Monday,July,False,False,221.52142857142857
+2024-07-09,271.51,Summer Break,Tuesday,July,False,False,222.98428571428573
+2024-07-10,266.49,Summer Break,Wednesday,July,False,False,222.67142857142858
+2024-07-11,276.82,Summer Break,Thursday,July,False,False,224.13000000000002
+2024-07-12,266.91,Summer Break,Friday,July,False,False,227.33428571428573
+2024-07-13,157.37,Summer Break,Saturday,July,True,False,226.69571428571427
+2024-07-14,95.09,Summer Break,Sunday,July,True,False,226.27142857142857
+2024-07-15,251.9,Summer Break,Monday,July,False,False,226.58428571428573
+2024-07-16,246.6,Summer Break,Tuesday,July,False,False,223.0257142857143
+2024-07-17,245.5,Summer Break,Wednesday,July,False,False,220.02714285714288
+2024-07-18,283.23,Summer Break,Thursday,July,False,False,220.94285714285715
+2024-07-19,253.22,Summer Break,Friday,July,False,False,218.98714285714286
+2024-07-20,167.42,Summer Break,Saturday,July,True,False,220.42285714285714
+2024-07-21,106.21,Summer Break,Sunday,July,True,False,222.01142857142855
+2024-07-22,274.01,Summer Break,Monday,July,False,False,225.17
+2024-07-23,258.89,Summer Break,Tuesday,July,False,False,226.9257142857143
+2024-07-24,262.73,Summer Break,Wednesday,July,False,False,229.38714285714286
+2024-07-25,258.36,Summer Break,Thursday,July,False,False,225.8342857142857
+2024-07-26,242.98,Summer Break,Friday,July,False,False,224.37142857142857
+2024-07-27,162.16,Summer Break,Saturday,July,True,False,223.61999999999998
+2024-07-28,98.96,Summer Break,Sunday,July,True,False,222.58428571428573
+2024-07-29,468.27,Regular,Monday,July,False,False,250.33571428571426
+2024-07-30,532.56,Regular,Tuesday,July,False,False,289.43142857142857
+2024-07-31,484.08,Regular,Wednesday,July,False,False,321.05285714285714
+2024-08-01,563.09,Regular,Thursday,August,False,False,364.5857142857143
+2024-08-02,564.48,Regular,Friday,August,False,False,410.5142857142857
+2024-08-03,336.26,Regular,Saturday,August,True,False,435.38571428571424
+2024-08-04,201.62,Regular,Sunday,August,True,False,450.0514285714286
+2024-08-05,467.35,Regular,Monday,August,False,False,449.92
+2024-08-06,561.83,Regular,Tuesday,August,False,False,454.1014285714286
+2024-08-07,510.07,Regular,Wednesday,August,False,False,457.81428571428575
+2024-08-08,565.8,Regular,Thursday,August,False,False,458.20142857142855
+2024-08-09,565.48,Regular,Friday,August,False,False,458.3442857142857
+2024-08-10,332.42,Regular,Saturday,August,True,False,457.79571428571427
+2024-08-11,198.49,Regular,Sunday,August,True,False,457.34857142857146
+2024-08-12,505.61,Regular,Monday,August,False,False,462.81428571428575
+2024-08-13,553.84,Regular,Tuesday,August,False,False,461.67285714285714
+2024-08-14,498.55,Regular,Wednesday,August,False,False,460.02714285714285
+2024-08-15,483.29,Regular,Thursday,August,False,False,448.24000000000007
+2024-08-16,523.38,Regular,Friday,August,False,False,442.2257142857143
+2024-08-17,337.59,Regular,Saturday,August,True,False,442.9642857142858
+2024-08-18,215.12,Regular,Sunday,August,True,False,445.34000000000003
+2024-08-19,524.75,Regular,Monday,August,False,False,448.07428571428574
+2024-08-20,475.81,Regular,Tuesday,August,False,False,436.9271428571429
+2024-08-21,529.4,Regular,Wednesday,August,False,False,441.3342857142857
+2024-08-22,568.22,Regular,Thursday,August,False,False,453.4671428571429
+2024-08-23,480.25,Regular,Friday,August,False,False,447.3057142857143
+2024-08-24,311.64,Regular,Saturday,August,True,False,443.59857142857146
+2024-08-25,222.62,Regular,Sunday,August,True,False,444.67
+2024-08-26,542.42,Regular,Monday,August,False,False,447.19428571428574
+2024-08-27,537.89,Regular,Tuesday,August,False,False,456.0628571428571
+2024-08-28,538.46,Regular,Wednesday,August,False,False,457.35714285714283
+2024-08-29,502.96,Regular,Thursday,August,False,False,448.03428571428566
+2024-08-30,496.14,Regular,Friday,August,False,False,450.30428571428564
+2024-08-31,329.71,Regular,Saturday,August,True,False,452.88571428571424
+2024-09-01,191.16,Regular Semester,Sunday,September,True,False,448.39142857142855
+2024-09-02,483.04,Regular Semester,Monday,September,False,False,439.9085714285714
+2024-09-03,487.19,Regular Semester,Tuesday,September,False,False,432.6657142857143
+2024-09-04,451.02,Regular Semester,Wednesday,September,False,False,420.1742857142857
+2024-09-05,450.14,Regular Semester,Thursday,September,False,False,412.62857142857143
+2024-09-06,476.85,Regular Semester,Friday,September,False,False,409.8728571428572
+2024-09-07,278.1,Regular Semester,Saturday,September,True,False,402.5
+2024-09-08,187.27,Regular Semester,Sunday,September,True,False,401.94428571428574
+2024-09-09,476.62,Regular Semester,Monday,September,False,False,401.0271428571428
+2024-09-10,485.1,Regular Semester,Tuesday,September,False,False,400.72857142857146
+2024-09-11,435.42,Regular Semester,Wednesday,September,False,False,398.50000000000006
+2024-09-12,438.8,Regular Semester,Thursday,September,False,False,396.88
+2024-09-13,413.46,Regular Semester,Friday,September,False,False,387.82428571428574
+2024-09-14,274.23,Regular Semester,Saturday,September,True,False,387.2714285714286
+2024-09-15,163.29,Regular Semester,Sunday,September,True,False,383.8457142857143
+2024-09-16,446.9,Regular Semester,Monday,September,False,False,379.6
+2024-09-17,453.84,Regular Semester,Tuesday,September,False,False,375.13428571428574
+2024-09-18,430.79,Regular Semester,Wednesday,September,False,False,374.47285714285715
+2024-09-19,458.17,Regular Semester,Thursday,September,False,False,377.24000000000007
+2024-09-20,407.75,Regular Semester,Friday,September,False,False,376.42428571428576
+2024-09-21,245.02,Regular Semester,Saturday,September,True,False,372.2514285714286
+2024-09-22,191.61,Regular Semester,Sunday,September,True,False,376.29714285714283
+2024-09-23,437.42,Regular Semester,Monday,September,False,False,374.9428571428571
+2024-09-24,416.44,Regular Semester,Tuesday,September,False,False,369.59999999999997
+2024-09-25,452.0,Regular Semester,Wednesday,September,False,False,372.63
+2024-09-26,474.3,Regular Semester,Thursday,September,False,False,374.9342857142857
+2024-09-27,424.42,Regular Semester,Friday,September,False,False,377.3157142857143
+2024-09-28,276.64,Regular Semester,Saturday,September,True,False,381.8328571428571
+2024-09-29,165.07,Regular Semester,Sunday,September,True,False,378.0414285714286
+2024-09-30,409.65,Regular Semester,Monday,September,False,False,374.07428571428574
+2024-10-01,452.82,Regular,Tuesday,October,False,False,379.2714285714286
+2024-10-02,453.66,Regular,Wednesday,October,False,False,379.50857142857143
+2024-10-03,462.37,Regular,Thursday,October,False,False,377.80428571428575
+2024-10-04,470.35,Regular,Friday,October,False,False,384.36571428571426
+2024-10-05,295.7,Regular,Saturday,October,True,False,387.0885714285714
+2024-10-06,180.59,Regular,Sunday,October,True,False,389.3057142857143
+2024-10-07,434.07,Regular,Monday,October,False,False,392.79428571428576
+2024-10-08,476.57,Regular,Tuesday,October,False,False,396.1871428571429
+2024-10-09,429.37,Regular,Wednesday,October,False,False,392.71714285714285
+2024-10-10,444.51,Regular,Thursday,October,False,False,390.1657142857143
+2024-10-11,412.06,Regular,Friday,October,False,False,381.8385714285714
+2024-10-12,244.37,Regular,Saturday,October,True,False,374.5057142857143
+2024-10-13,196.66,Regular,Sunday,October,True,False,376.8014285714286
+2024-10-14,480.24,Regular,Monday,October,False,False,383.3971428571428
+2024-10-15,818.67,Midterm Exams,Tuesday,October,False,True,432.2685714285714
+2024-10-16,730.78,Midterm Exams,Wednesday,October,False,True,475.32714285714286
+2024-10-17,761.5,Midterm Exams,Thursday,October,False,True,520.6114285714285
+2024-10-18,833.91,Midterm Exams,Friday,October,False,True,580.8757142857143
+2024-10-19,510.73,Midterm Exams,Saturday,October,True,True,618.9271428571428
+2024-10-20,379.42,Midterm Exams,Sunday,October,True,True,645.0357142857143
+2024-10-21,807.07,Midterm Exams,Monday,October,False,True,691.7257142857143
+2024-10-22,751.47,Midterm Exams,Tuesday,October,False,True,682.1257142857143
+2024-10-23,807.85,Midterm Exams,Wednesday,October,False,True,693.1357142857142
+2024-10-24,717.01,Midterm Exams,Thursday,October,False,True,686.78
+2024-10-25,746.64,Midterm Exams,Friday,October,False,True,674.3128571428572
+2024-10-26,523.3,Midterm Exams,Saturday,October,True,True,676.1085714285715
+2024-10-27,339.42,Midterm Exams,Sunday,October,True,True,670.3942857142856
+2024-10-28,447.61,Regular,Monday,October,False,False,619.0428571428572
+2024-10-29,420.59,Regular,Tuesday,October,False,False,571.7742857142856
+2024-10-30,444.05,Regular,Wednesday,October,False,False,519.8028571428571
+2024-10-31,440.87,Regular,Thursday,October,False,False,480.3542857142857
+2024-11-01,460.43,Regular Semester,Friday,November,False,False,439.4671428571429
+2024-11-02,277.3,Regular Semester,Saturday,November,True,False,404.32428571428574
+2024-11-03,163.63,Regular Semester,Sunday,November,True,False,379.2114285714286
+2024-11-04,438.72,Regular Semester,Monday,November,False,False,377.9414285714285
+2024-11-05,461.33,Regular Semester,Tuesday,November,False,False,383.76142857142855
+2024-11-06,450.28,Regular Semester,Wednesday,November,False,False,384.65142857142854
+2024-11-07,482.08,Regular Semester,Thursday,November,False,False,390.5385714285714
+2024-11-08,464.28,Regular Semester,Friday,November,False,False,391.08857142857147
+2024-11-09,251.8,Regular Semester,Saturday,November,True,False,387.44571428571425
+2024-11-10,164.54,Regular Semester,Sunday,November,True,False,387.57571428571424
+2024-11-11,462.82,Regular Semester,Monday,November,False,False,391.0185714285714
+2024-11-12,407.39,Regular Semester,Tuesday,November,False,False,383.3128571428571
+2024-11-13,457.72,Regular Semester,Wednesday,November,False,False,384.3757142857143
+2024-11-14,489.62,Regular Semester,Thursday,November,False,False,385.45285714285717
+2024-11-15,456.79,Regular Semester,Friday,November,False,False,384.3828571428571
+2024-11-16,263.96,Regular Semester,Saturday,November,True,False,386.12
+2024-11-17,185.16,Regular Semester,Sunday,November,True,False,389.0657142857143
+2024-11-18,446.24,Regular Semester,Monday,November,False,False,386.69714285714286
+2024-11-19,454.11,Regular Semester,Tuesday,November,False,False,393.3714285714286
+2024-11-20,489.73,Regular Semester,Wednesday,November,False,False,397.9442857142857
+2024-11-21,439.75,Regular Semester,Thursday,November,False,False,390.82
+2024-11-22,491.51,Regular Semester,Friday,November,False,False,395.78000000000003
+2024-11-23,291.89,Regular Semester,Saturday,November,True,False,399.77
+2024-11-24,169.05,Regular Semester,Sunday,November,True,False,397.46857142857147
+2024-11-25,411.24,Regular Semester,Monday,November,False,False,392.4685714285714
+2024-11-26,414.07,Regular Semester,Tuesday,November,False,False,386.74857142857144
+2024-11-27,406.64,Regular Semester,Wednesday,November,False,False,374.87857142857143
+2024-11-28,413.5,Regular Semester,Thursday,November,False,False,371.1285714285714
+2024-11-29,466.47,Regular Semester,Friday,November,False,False,367.5514285714286
+2024-11-30,246.84,Regular Semester,Saturday,November,True,False,361.11571428571426
+2024-12-01,482.58,Final Exams,Sunday,December,True,True,405.9057142857143
+2024-12-02,1006.69,Final Exams,Monday,December,False,True,490.96999999999997
+2024-12-03,1024.23,Final Exams,Tuesday,December,False,True,578.1357142857142
+2024-12-04,1133.79,Final Exams,Wednesday,December,False,True,682.0142857142857
+2024-12-05,1175.69,Final Exams,Thursday,December,False,True,790.8985714285715
+2024-12-06,1138.06,Final Exams,Friday,December,False,True,886.84
+2024-12-07,655.84,Final Exams,Saturday,December,True,True,945.2685714285715
+2024-12-08,529.38,Final Exams,Sunday,December,True,True,951.9542857142858
+2024-12-09,1063.41,Final Exams,Monday,December,False,True,960.0571428571429
+2024-12-10,1135.51,Final Exams,Tuesday,December,False,True,975.9542857142858
+2024-12-11,1192.65,Final Exams,Wednesday,December,False,True,984.3628571428571
+2024-12-12,1085.66,Final Exams,Thursday,December,False,True,971.5014285714286
+2024-12-13,1119.2,Final Exams,Friday,December,False,True,968.8071428571428
+2024-12-14,731.67,Final Exams,Saturday,December,True,True,979.64
+2024-12-15,239.69,Regular,Sunday,December,True,False,938.2557142857144
+2024-12-16,542.26,Regular,Monday,December,False,False,863.8057142857142
+2024-12-17,607.0,Regular,Tuesday,December,False,False,788.3042857142856
+2024-12-18,550.04,Regular,Wednesday,December,False,False,696.5028571428572
+2024-12-19,507.47,Regular,Thursday,December,False,False,613.9042857142857
+2024-12-20,182.43,Winter Break,Friday,December,False,False,480.08
+2024-12-21,92.97,Winter Break,Saturday,December,True,False,388.8371428571428
+2024-12-22,65.06,Winter Break,Sunday,December,True,False,363.88999999999993
+2024-12-23,183.94,Winter Break,Monday,December,False,False,312.70142857142855
+2024-12-24,183.96,Winter Break,Tuesday,December,False,False,252.26714285714283
+2024-12-25,171.23,Winter Break,Wednesday,December,False,False,198.15142857142857
+2024-12-26,173.2,Winter Break,Thursday,December,False,False,150.39857142857142
+2024-12-27,167.01,Winter Break,Friday,December,False,False,148.19571428571427
+2024-12-28,97.06,Winter Break,Saturday,December,True,False,148.78
+2024-12-29,65.19,Winter Break,Sunday,December,True,False,148.79857142857142
+2024-12-30,174.57,Winter Break,Monday,December,False,False,147.46
+2024-12-31,177.27,Winter Break,Tuesday,December,False,False,146.50428571428571
+2025-01-01,178.59,Winter Break,Wednesday,January,False,False,147.55571428571426
+2025-01-02,178.52,Winter Break,Thursday,January,False,False,148.31571428571428
+2025-01-03,154.95,Winter Break,Friday,January,False,False,146.59285714285716
+2025-01-04,101.14,Winter Break,Saturday,January,True,False,147.1757142857143
+2025-01-05,61.53,Winter Break,Sunday,January,True,False,146.65285714285713
+2025-01-06,170.42,Winter Break,Monday,January,False,False,146.06
+2025-01-07,166.78,Winter Break,Tuesday,January,False,False,144.56142857142856
+2025-01-08,181.84,Winter Break,Wednesday,January,False,False,145.0257142857143
+2025-01-09,163.72,Winter Break,Thursday,January,False,False,142.91142857142856
+2025-01-10,519.42,Regular,Friday,January,False,False,194.97857142857143
+2025-01-11,313.4,Regular,Saturday,January,True,False,225.30142857142854
+2025-01-12,236.77,Regular,Sunday,January,True,False,250.33571428571426
+2025-01-13,575.8,Regular,Monday,January,False,False,308.2471428571428
+2025-01-14,517.63,Regular,Tuesday,January,False,False,358.36857142857144
+2025-01-15,515.71,Regular,Wednesday,January,False,False,406.0642857142857
+2025-01-16,585.11,Regular,Thursday,January,False,False,466.2628571428572
+2025-01-17,514.44,Regular,Friday,January,False,False,465.5514285714285
+2025-01-18,359.23,Regular,Saturday,January,True,False,472.0985714285715
+2025-01-19,234.28,Regular,Sunday,January,True,False,471.74285714285713
+2025-01-20,515.4,Regular,Monday,January,False,False,463.11428571428576
+2025-01-21,515.79,Regular,Tuesday,January,False,False,462.8514285714286
+2025-01-22,617.25,Regular,Wednesday,January,False,False,477.35714285714283
+2025-01-23,548.36,Regular,Thursday,January,False,False,472.10714285714283
+2025-01-24,547.95,Regular,Friday,January,False,False,476.8942857142857
+2025-01-25,358.61,Regular,Saturday,January,True,False,476.80571428571426
+2025-01-26,245.13,Regular,Sunday,January,True,False,478.35571428571427
+2025-01-27,617.18,Regular,Monday,January,False,False,492.8957142857143
+2025-01-28,591.01,Regular,Tuesday,January,False,False,503.64142857142855
+2025-01-29,548.58,Regular,Wednesday,January,False,False,493.83142857142855
+2025-01-30,515.64,Regular,Thursday,January,False,False,489.1571428571429
+2025-01-31,593.68,Regular,Friday,January,False,False,495.69
+2025-02-01,341.44,Regular Semester,Saturday,February,True,False,493.2371428571428
+2025-02-02,221.59,Regular Semester,Sunday,February,True,False,489.8742857142857
+2025-02-03,608.21,Regular Semester,Monday,February,False,False,488.5928571428571
+2025-02-04,518.76,Regular Semester,Tuesday,February,False,False,478.2714285714286
+2025-02-05,561.67,Regular Semester,Wednesday,February,False,False,480.14142857142855
+2025-02-06,507.53,Regular Semester,Thursday,February,False,False,478.9828571428571
+2025-02-07,558.97,Regular Semester,Friday,February,False,False,474.0242857142857
+2025-02-08,307.55,Regular Semester,Saturday,February,True,False,469.18285714285713
+2025-02-09,207.85,Regular Semester,Sunday,February,True,False,467.21999999999997
+2025-02-10,519.47,Regular Semester,Monday,February,False,False,454.5428571428571
+2025-02-11,579.29,Regular Semester,Tuesday,February,False,False,463.19
+2025-02-12,590.18,Regular Semester,Wednesday,February,False,False,467.2628571428571
+2025-02-13,571.88,Regular Semester,Thursday,February,False,False,476.4557142857143
+2025-02-14,614.49,Regular Semester,Friday,February,False,False,484.38714285714286
+2025-02-15,329.05,Regular Semester,Saturday,February,True,False,487.4585714285714
+2025-02-16,215.36,Regular Semester,Sunday,February,True,False,488.53142857142853
+2025-02-17,603.97,Regular Semester,Monday,February,False,False,500.6028571428572
+2025-02-18,531.4,Regular Semester,Tuesday,February,False,False,493.76142857142855
+2025-02-19,614.61,Regular Semester,Wednesday,February,False,False,497.2514285714286
+2025-02-20,507.62,Regular Semester,Thursday,February,False,False,488.07142857142856
+2025-02-21,615.36,Regular Semester,Friday,February,False,False,488.19571428571436
+2025-02-22,306.66,Regular Semester,Saturday,February,True,False,484.9971428571429
+2025-02-23,242.6,Regular Semester,Sunday,February,True,False,488.8885714285715
+2025-02-24,565.62,Regular Semester,Monday,February,False,False,483.40999999999997
+2025-02-25,617.96,Regular Semester,Tuesday,February,False,False,495.77571428571434
+2025-02-26,514.55,Regular Semester,Wednesday,February,False,False,481.4814285714286
+2025-02-27,568.56,Regular Semester,Thursday,February,False,False,490.1871428571429
+2025-02-28,615.3,Regular Semester,Friday,February,False,False,490.17857142857144
+2025-03-01,271.25,Regular,Saturday,March,True,False,485.12
+2025-03-02,184.66,Regular,Sunday,March,True,False,476.8428571428571
+2025-03-03,467.62,Regular,Monday,March,False,False,462.8428571428571
+2025-03-04,445.91,Regular,Tuesday,March,False,False,438.2642857142857
+2025-03-05,461.48,Regular,Wednesday,March,False,False,430.6828571428572
+2025-03-06,457.59,Regular,Thursday,March,False,False,414.83
+2025-03-07,486.1,Regular,Friday,March,False,False,396.3728571428571
+2025-03-08,245.45,Regular,Saturday,March,True,False,392.6871428571429
+2025-03-09,172.11,Regular,Sunday,March,True,False,390.89428571428573
+2025-03-10,879.37,Midterm Exams,Monday,March,False,True,449.71571428571434
+2025-03-11,794.62,Midterm Exams,Tuesday,March,False,True,499.53142857142853
+2025-03-12,747.35,Midterm Exams,Wednesday,March,False,True,540.37
+2025-03-13,782.44,Midterm Exams,Thursday,March,False,True,586.777142857143
+2025-03-14,785.93,Midterm Exams,Friday,March,False,True,629.6099999999999
+2025-03-15,572.3,Midterm Exams,Saturday,March,True,True,676.3028571428571
+2025-03-16,376.22,Midterm Exams,Sunday,March,True,True,705.4614285714287
+2025-03-17,783.26,Midterm Exams,Monday,March,False,True,691.7314285714285
+2025-03-18,804.73,Midterm Exams,Tuesday,March,False,True,693.1757142857143
+2025-03-19,870.3,Midterm Exams,Wednesday,March,False,True,710.7399999999999
+2025-03-20,871.06,Midterm Exams,Thursday,March,False,True,723.4
+2025-03-21,807.24,Midterm Exams,Friday,March,False,True,726.4442857142857
+2025-03-22,293.37,Regular,Saturday,March,True,False,686.5971428571428
+2025-03-23,193.18,Regular,Sunday,March,True,False,660.4485714285714
+2025-03-24,409.07,Regular,Monday,March,False,False,606.9928571428571
+2025-03-25,407.37,Regular,Tuesday,March,False,False,550.2271428571429
+2025-03-26,438.88,Regular,Wednesday,March,False,False,488.5957142857143
+2025-03-27,477.95,Regular,Thursday,March,False,False,432.4371428571429
+2025-03-28,493.85,Regular,Friday,March,False,False,387.6671428571429
+2025-03-29,251.12,Regular,Saturday,March,True,False,381.63142857142856
+2025-03-30,183.39,Regular,Sunday,March,True,False,380.23285714285714
+2025-03-31,439.28,Regular,Monday,March,False,False,384.54857142857145
+2025-04-01,492.29,Regular Semester,Tuesday,April,False,False,396.67999999999995
+2025-04-02,480.79,Regular Semester,Wednesday,April,False,False,402.6671428571429
+2025-04-03,480.45,Regular Semester,Thursday,April,False,False,403.0242857142857
+2025-04-04,447.18,Regular Semester,Friday,April,False,False,396.35714285714283
+2025-04-05,265.4,Regular Semester,Saturday,April,True,False,398.3971428571429
+2025-04-06,171.84,Regular Semester,Sunday,April,True,False,396.7471428571429
+2025-04-07,410.07,Regular Semester,Monday,April,False,False,392.57428571428574
+2025-04-08,482.83,Regular Semester,Tuesday,April,False,False,391.22285714285715
+2025-04-09,478.16,Regular Semester,Wednesday,April,False,False,390.8471428571429
+2025-04-10,494.97,Regular Semester,Thursday,April,False,False,392.9214285714285
+2025-04-11,494.7,Regular Semester,Friday,April,False,False,399.71000000000004
+2025-04-12,272.99,Regular Semester,Saturday,April,True,False,400.7942857142857
+2025-04-13,189.68,Regular Semester,Sunday,April,True,False,403.3428571428571
+2025-04-14,490.03,Regular Semester,Monday,April,False,False,414.7657142857143
+2025-04-15,481.47,Regular Semester,Tuesday,April,False,False,414.57142857142856
+2025-04-16,427.26,Regular Semester,Wednesday,April,False,False,407.3
+2025-04-17,445.55,Regular Semester,Thursday,April,False,False,400.24000000000007
+2025-04-18,416.62,Regular Semester,Friday,April,False,False,389.0857142857143
+2025-04-19,294.52,Regular Semester,Saturday,April,True,False,392.1614285714286
+2025-04-20,183.82,Regular Semester,Sunday,April,True,False,391.3242857142856
+2025-04-21,425.58,Regular Semester,Monday,April,False,False,382.1171428571429
+2025-04-22,465.45,Regular Semester,Tuesday,April,False,False,379.8285714285715
+2025-04-23,460.63,Regular Semester,Wednesday,April,False,False,384.5957142857143
+2025-04-24,437.23,Regular Semester,Thursday,April,False,False,383.40714285714284
+2025-04-25,415.22,Regular Semester,Friday,April,False,False,383.20714285714286
+2025-04-26,279.26,Regular Semester,Saturday,April,True,False,381.02714285714285
+2025-04-27,180.73,Regular Semester,Sunday,April,True,False,380.5857142857143
+2025-04-28,474.51,Regular Semester,Monday,April,False,False,387.57571428571424
+2025-04-29,451.81,Regular,Tuesday,April,False,False,385.6271428571428
+2025-04-30,481.7,Regular,Wednesday,April,False,False,388.63714285714286
+2025-05-01,454.67,Regular,Thursday,May,False,False,391.12857142857143
+2025-05-02,455.48,Regular,Friday,May,False,False,396.88000000000005
+2025-05-03,290.34,Regular,Saturday,May,True,False,398.4628571428571
+2025-05-04,176.53,Regular,Sunday,May,True,False,397.86285714285714
+2025-05-05,802.15,Final Exams,Monday,May,False,True,444.66857142857145
+2025-05-06,932.35,Final Exams,Tuesday,May,False,True,513.3171428571429
+2025-05-07,903.71,Final Exams,Wednesday,May,False,True,573.6042857142858
+2025-05-08,801.82,Final Exams,Thursday,May,False,True,623.1971428571429
+2025-05-09,865.29,Final Exams,Friday,May,False,True,681.7414285714285
+2025-05-10,547.4,Final Exams,Saturday,May,True,True,718.4642857142857
+2025-05-11,417.6,Final Exams,Sunday,May,True,True,752.9028571428571
+2025-05-12,901.45,Final Exams,Monday,May,False,True,767.0885714285715
+2025-05-13,874.34,Final Exams,Tuesday,May,False,True,758.8014285714286
+2025-05-14,966.18,Final Exams,Wednesday,May,False,True,767.7257142857143
+2025-05-15,849.16,Final Exams,Thursday,May,False,True,774.4885714285714
+2025-05-16,871.64,Final Exams,Friday,May,False,True,775.3957142857143
+2025-05-17,581.03,Final Exams,Saturday,May,True,True,780.1999999999999
+2025-05-18,389.96,Final Exams,Sunday,May,True,True,776.2514285714286
+2025-05-19,893.62,Final Exams,Monday,May,False,True,775.132857142857
+2025-05-20,411.83,Regular,Tuesday,May,False,False,709.0600000000001
+2025-05-21,416.6,Regular,Wednesday,May,False,False,630.5485714285714
+2025-05-22,416.52,Regular,Thursday,May,False,False,568.7428571428571
+2025-05-23,418.67,Regular,Friday,May,False,False,504.0328571428571
+2025-05-24,250.5,Regular,Saturday,May,True,False,456.8142857142857
+2025-05-25,185.07,Regular,Sunday,May,True,False,427.5442857142857
+2025-05-26,421.37,Regular,Monday,May,False,False,360.08
+2025-05-27,436.11,Regular,Tuesday,May,False,False,363.54857142857145
+2025-05-28,485.71,Regular,Wednesday,May,False,False,373.42142857142863
+2025-05-29,447.66,Regular,Thursday,May,False,False,377.87
+2025-05-30,465.08,Regular,Friday,May,False,False,384.5
+2025-05-31,252.31,Regular,Saturday,May,True,False,384.75857142857143
+2025-06-01,97.13,Summer Break,Sunday,June,True,False,372.19571428571425
+2025-06-02,234.99,Summer Break,Monday,June,False,False,345.57000000000005
+2025-06-03,241.62,Summer Break,Tuesday,June,False,False,317.7857142857143
+2025-06-04,247.29,Summer Break,Wednesday,June,False,False,283.7257142857143
+2025-06-05,242.04,Summer Break,Thursday,June,False,False,254.35142857142858
+2025-06-06,237.47,Summer Break,Friday,June,False,False,221.83571428571432
+2025-06-07,143.47,Summer Break,Saturday,June,True,False,206.28714285714287
+2025-06-08,102.69,Summer Break,Sunday,June,True,False,207.0814285714286
+2025-06-09,243.55,Summer Break,Monday,June,False,False,208.30428571428573
+2025-06-10,251.73,Summer Break,Tuesday,June,False,False,209.74857142857144
+2025-06-11,258.93,Summer Break,Wednesday,June,False,False,211.4114285714286
+2025-06-12,268.6,Summer Break,Thursday,June,False,False,215.2057142857143
+2025-06-13,234.91,Summer Break,Friday,June,False,False,214.84
+2025-06-14,164.55,Summer Break,Saturday,June,True,False,217.85142857142858
+2025-06-15,106.15,Summer Break,Sunday,June,True,False,218.3457142857143
+2025-06-16,237.11,Summer Break,Monday,June,False,False,217.4257142857143
+2025-06-17,278.08,Summer Break,Tuesday,June,False,False,221.19
+2025-06-18,280.53,Summer Break,Wednesday,June,False,False,224.2757142857143
+2025-06-19,236.04,Summer Break,Thursday,June,False,False,219.6242857142857
+2025-06-20,247.2,Summer Break,Friday,June,False,False,221.37999999999997
+2025-06-21,164.76,Summer Break,Saturday,June,True,False,221.41
+2025-06-22,108.64,Summer Break,Sunday,June,True,False,221.76571428571427
+2025-06-23,242.42,Summer Break,Monday,June,False,False,222.5242857142857
+2025-06-24,243.71,Summer Break,Tuesday,June,False,False,217.6142857142857
+2025-06-25,252.05,Summer Break,Wednesday,June,False,False,213.54571428571427
+2025-06-26,257.95,Summer Break,Thursday,June,False,False,216.6757142857143
+2025-06-27,264.87,Summer Break,Friday,June,False,False,219.20000000000002
+2025-06-28,151.18,Summer Break,Saturday,June,True,False,217.26
+2025-06-29,205.45,Regular,Sunday,June,True,False,231.08999999999997
+2025-06-30,543.11,Regular,Monday,June,False,False,274.0457142857143
+2025-07-01,234.77,Summer Break,Tuesday,July,False,False,272.7685714285714
+2025-07-02,245.94,Summer Break,Wednesday,July,False,False,271.8957142857143
+2025-07-03,269.79,Summer Break,Thursday,July,False,False,273.58714285714285
+2025-07-04,279.2,Summer Break,Friday,July,False,False,275.63428571428574
+2025-07-05,155.61,Summer Break,Saturday,July,True,False,276.26714285714286
+2025-07-06,104.16,Summer Break,Sunday,July,True,False,261.79714285714283
+2025-07-07,238.42,Summer Break,Monday,July,False,False,218.26999999999998
+2025-07-08,256.03,Summer Break,Tuesday,July,False,False,221.30714285714285
+2025-07-09,260.44,Summer Break,Wednesday,July,False,False,223.37857142857143
+2025-07-10,245.42,Summer Break,Thursday,July,False,False,219.89714285714285
+2025-07-11,246.81,Summer Break,Friday,July,False,False,215.27
+2025-07-12,151.44,Summer Break,Saturday,July,True,False,214.67428571428567
+2025-07-13,93.57,Summer Break,Sunday,July,True,False,213.1614285714286
+2025-07-14,249.54,Summer Break,Monday,July,False,False,214.75
+2025-07-15,243.82,Summer Break,Tuesday,July,False,False,213.00571428571428
+2025-07-16,249.82,Summer Break,Wednesday,July,False,False,211.48857142857142
+2025-07-17,239.07,Summer Break,Thursday,July,False,False,210.5814285714286
+2025-07-18,278.96,Summer Break,Friday,July,False,False,215.17428571428567
+2025-07-19,158.16,Summer Break,Saturday,July,True,False,216.1342857142857
+2025-07-20,107.21,Summer Break,Sunday,July,True,False,218.08285714285714
+2025-07-21,273.71,Summer Break,Monday,July,False,False,221.53571428571428
+2025-07-22,258.67,Summer Break,Tuesday,July,False,False,223.65714285714284
+2025-07-23,237.37,Summer Break,Wednesday,July,False,False,221.87857142857143
+2025-07-24,260.67,Summer Break,Thursday,July,False,False,224.96428571428572
+2025-07-25,263.24,Summer Break,Friday,July,False,False,222.71857142857147
+2025-07-26,162.87,Summer Break,Saturday,July,True,False,223.39142857142858
+2025-07-27,102.09,Summer Break,Sunday,July,True,False,222.66
+2025-07-28,239.48,Summer Break,Monday,July,False,False,217.76999999999998
+2025-07-29,495.12,Regular,Tuesday,July,False,False,251.54857142857145
+2025-07-30,503.33,Regular,Wednesday,July,False,False,289.54285714285714
+2025-07-31,532.6,Regular,Thursday,July,False,False,328.39
+2025-08-01,524.83,Regular,Friday,August,False,False,365.75999999999993
+2025-08-02,301.56,Regular,Saturday,August,True,False,385.5728571428572
+2025-08-03,227.14,Regular,Sunday,August,True,False,403.4371428571429
+2025-08-04,528.45,Regular,Monday,August,False,False,444.7185714285714
+2025-08-05,490.3,Regular,Tuesday,August,False,False,444.03000000000003
+2025-08-06,476.28,Regular,Wednesday,August,False,False,440.16571428571433
+2025-08-07,481.57,Regular,Thursday,August,False,False,432.8757142857143
+2025-08-08,491.21,Regular,Friday,August,False,False,428.0728571428572
+2025-08-09,289.43,Regular,Saturday,August,True,False,426.34000000000003
+2025-08-10,194.02,Regular,Sunday,August,True,False,421.60857142857145
+2025-08-11,495.26,Regular,Monday,August,False,False,416.8671428571429
+2025-08-12,483.69,Regular,Tuesday,August,False,False,415.92285714285714
+2025-08-13,558.57,Regular,Wednesday,August,False,False,427.67857142857144
+2025-08-14,474.05,Regular,Thursday,August,False,False,426.6042857142857
+2025-08-15,520.04,Regular,Friday,August,False,False,430.72285714285715
+2025-08-16,304.94,Regular,Saturday,August,True,False,432.93857142857144
+2025-08-17,226.97,Regular,Sunday,August,True,False,437.64571428571423
+2025-08-18,477.35,Regular,Monday,August,False,False,435.0871428571428
+2025-08-19,506.93,Regular,Tuesday,August,False,False,438.40714285714284
+2025-08-20,566.09,Regular,Wednesday,August,False,False,439.4814285714286
+2025-08-21,555.33,Regular,Thursday,August,False,False,451.09285714285716
+2025-08-22,550.32,Regular,Friday,August,False,False,455.41857142857145
+2025-08-23,295.47,Regular,Saturday,August,True,False,454.0657142857143
+2025-08-24,193.37,Regular,Sunday,August,True,False,449.2657142857143
+2025-08-25,534.95,Regular,Monday,August,False,False,457.4942857142858
+2025-08-26,561.94,Regular,Tuesday,August,False,False,465.3528571428572
+2025-08-27,523.37,Regular,Wednesday,August,False,False,459.25
+2025-08-28,524.91,Regular,Thursday,August,False,False,454.9042857142857
+2025-08-29,494.73,Regular,Friday,August,False,False,446.96285714285716
+2025-08-30,327.24,Regular,Saturday,August,True,False,451.5014285714286
+2025-08-31,194.04,Regular,Sunday,August,True,False,451.5971428571429
+2025-09-01,434.13,Regular Semester,Monday,September,False,False,437.1942857142857
+2025-09-02,443.29,Regular Semester,Tuesday,September,False,False,420.2442857142857
+2025-09-03,450.68,Regular Semester,Wednesday,September,False,False,409.86
+2025-09-04,426.82,Regular Semester,Thursday,September,False,False,395.8471428571429
+2025-09-05,415.34,Regular Semester,Friday,September,False,False,384.5057142857143
+2025-09-06,275.97,Regular Semester,Saturday,September,True,False,377.18142857142857
+2025-09-07,172.39,Regular Semester,Sunday,September,True,False,374.0885714285714
+2025-09-08,457.31,Regular Semester,Monday,September,False,False,377.4
+2025-09-09,418.89,Regular Semester,Tuesday,September,False,False,373.91428571428565
+2025-09-10,448.3,Regular Semester,Wednesday,September,False,False,373.57428571428574
+2025-09-11,452.93,Regular Semester,Thursday,September,False,False,377.30428571428564
+2025-09-12,409.66,Regular Semester,Friday,September,False,False,376.4928571428572
+2025-09-13,261.18,Regular Semester,Saturday,September,True,False,374.38
+2025-09-14,166.84,Regular Semester,Sunday,September,True,False,373.58714285714285
+2025-09-15,410.7,Regular Semester,Monday,September,False,False,366.92857142857144
+2025-09-16,494.1,Regular Semester,Tuesday,September,False,False,377.67285714285714
+2025-09-17,434.01,Regular Semester,Wednesday,September,False,False,375.63142857142856
+2025-09-18,477.89,Regular Semester,Thursday,September,False,False,379.19714285714286
+2025-09-19,427.92,Regular Semester,Friday,September,False,False,381.80571428571426
+2025-09-20,279.8,Regular Semester,Saturday,September,True,False,384.46571428571434
+2025-09-21,189.37,Regular Semester,Sunday,September,True,False,387.6842857142857
+2025-09-22,458.61,Regular Semester,Monday,September,False,False,394.52857142857147
+2025-09-23,447.44,Regular Semester,Tuesday,September,False,False,387.8628571428572
+2025-09-24,442.07,Regular Semester,Wednesday,September,False,False,389.0142857142857
+2025-09-25,436.4,Regular Semester,Thursday,September,False,False,383.08714285714285
+2025-09-26,488.66,Regular Semester,Friday,September,False,False,391.7642857142857
+2025-09-27,287.85,Regular Semester,Saturday,September,True,False,392.9142857142857
+2025-09-28,196.74,Regular Semester,Sunday,September,True,False,393.96714285714285
+2025-09-29,416.19,Regular Semester,Monday,September,False,False,387.90714285714284
+2025-09-30,470.78,Regular Semester,Tuesday,September,False,False,391.2414285714285
+2025-10-01,489.45,Regular,Wednesday,October,False,False,398.01000000000005
+2025-10-02,421.31,Regular,Thursday,October,False,False,395.8542857142857
+2025-10-03,410.98,Regular,Friday,October,False,False,384.75714285714287
+2025-10-04,283.02,Regular,Saturday,October,True,False,384.0671428571428
+2025-10-05,182.68,Regular,Sunday,October,True,False,382.0585714285714
+2025-10-06,480.76,Regular,Monday,October,False,False,391.28285714285715
+2025-10-07,417.58,Regular,Tuesday,October,False,False,383.68285714285713
+2025-10-08,476.57,Regular,Wednesday,October,False,False,381.84285714285716
+2025-10-09,423.15,Regular,Thursday,October,False,False,382.10571428571427
+2025-10-10,419.73,Regular,Friday,October,False,False,383.35571428571427
+2025-10-11,251.87,Regular,Saturday,October,True,False,378.9057142857143
+2025-10-12,191.32,Regular,Sunday,October,True,False,380.14
+2025-10-13,464.87,Regular,Monday,October,False,False,377.87
+2025-10-14,452.08,Regular,Tuesday,October,False,False,382.79857142857145
+2025-10-15,793.53,Midterm Exams,Wednesday,October,False,True,428.07857142857137
+2025-10-16,795.34,Midterm Exams,Thursday,October,False,True,481.24857142857144
+2025-10-17,780.08,Midterm Exams,Friday,October,False,True,532.7271428571429
+2025-10-18,493.84,Midterm Exams,Saturday,October,True,True,567.2942857142857
+2025-10-19,377.4,Midterm Exams,Sunday,October,True,True,593.8771428571429
+2025-10-20,776.42,Midterm Exams,Monday,October,False,True,638.3842857142857
+2025-10-21,780.46,Midterm Exams,Tuesday,October,False,True,685.2957142857142
+2025-10-22,859.74,Midterm Exams,Wednesday,October,False,True,694.7542857142856
+2025-10-23,761.82,Midterm Exams,Thursday,October,False,True,689.9657142857143
+2025-10-24,805.14,Midterm Exams,Friday,October,False,True,693.5457142857142
+2025-10-25,490.53,Midterm Exams,Saturday,October,True,True,693.0728571428572
+2025-10-26,371.59,Midterm Exams,Sunday,October,True,True,692.2428571428571
+2025-10-27,866.15,Midterm Exams,Monday,October,False,True,705.0614285714286
+2025-10-28,418.65,Regular,Tuesday,October,False,False,653.3742857142857
+2025-10-29,433.05,Regular,Wednesday,October,False,False,592.4185714285715
+2025-10-30,427.36,Regular,Thursday,October,False,False,544.6385714285715
+2025-10-31,471.96,Regular,Friday,October,False,False,497.0414285714286
+2025-11-01,244.81,Regular Semester,Saturday,November,True,False,461.93857142857144
+2025-11-02,182.52,Regular Semester,Sunday,November,True,False,434.92857142857144
+2025-11-03,473.62,Regular Semester,Monday,November,False,False,378.8528571428572
+2025-11-04,483.91,Regular Semester,Tuesday,November,False,False,388.17571428571426
+2025-11-05,435.79,Regular Semester,Wednesday,November,False,False,388.56714285714287
+2025-11-06,478.91,Regular Semester,Thursday,November,False,False,395.93142857142857
+2025-11-07,414.96,Regular Semester,Friday,November,False,False,387.7885714285715
+2025-11-08,288.71,Regular Semester,Saturday,November,True,False,394.06
+2025-11-09,166.59,Regular Semester,Sunday,November,True,False,391.78428571428566
+2025-11-10,440.76,Regular Semester,Monday,November,False,False,387.09000000000003
+2025-11-11,476.76,Regular Semester,Tuesday,November,False,False,386.06857142857143
+2025-11-12,418.49,Regular Semester,Wednesday,November,False,False,383.59714285714284
+2025-11-13,425.63,Regular Semester,Thursday,November,False,False,375.9857142857142
+2025-11-14,470.0,Regular Semester,Friday,November,False,False,383.84857142857135
+2025-11-15,281.88,Regular Semester,Saturday,November,True,False,382.8728571428571
+2025-11-16,185.08,Regular Semester,Sunday,November,True,False,385.5142857142857
+2025-11-17,467.46,Regular Semester,Monday,November,False,False,389.32857142857137
+2025-11-18,453.85,Regular Semester,Tuesday,November,False,False,386.0557142857143
+2025-11-19,427.66,Regular Semester,Wednesday,November,False,False,387.36571428571426
+2025-11-20,436.11,Regular Semester,Thursday,November,False,False,388.8628571428572
+2025-11-21,421.34,Regular Semester,Friday,November,False,False,381.91142857142853
+2025-11-22,292.06,Regular Semester,Saturday,November,True,False,383.36571428571426
+2025-11-23,183.0,Regular Semester,Sunday,November,True,False,383.06857142857143
+2025-11-24,441.08,Regular Semester,Monday,November,False,False,379.30000000000007
+2025-11-25,446.58,Regular Semester,Tuesday,November,False,False,378.26142857142855
+2025-11-26,490.26,Regular Semester,Wednesday,November,False,False,387.2042857142857
+2025-11-27,418.8,Regular Semester,Thursday,November,False,False,384.7314285714286
+2025-11-28,457.76,Regular Semester,Friday,November,False,False,389.9342857142857
+2025-11-29,270.32,Regular Semester,Saturday,November,True,False,386.8285714285715
+2025-11-30,184.01,Regular Semester,Sunday,November,True,False,386.97285714285715
+2025-12-01,1008.52,Final Exams,Monday,December,False,True,468.0357142857143
+2025-12-02,1178.26,Final Exams,Tuesday,December,False,True,572.5614285714286
+2025-12-03,1148.45,Final Exams,Wednesday,December,False,True,666.5885714285714
+2025-12-04,1112.09,Final Exams,Thursday,December,False,True,765.63
+2025-12-05,1108.28,Final Exams,Friday,December,False,True,858.5614285714285
+2025-12-06,685.1,Final Exams,Saturday,December,True,True,917.8157142857143
+2025-12-07,536.46,Final Exams,Sunday,December,True,True,968.1657142857142
+2025-12-08,1058.21,Final Exams,Monday,December,False,True,975.2642857142857
+2025-12-09,1202.63,Final Exams,Tuesday,December,False,True,978.7457142857144
+2025-12-10,1032.54,Final Exams,Wednesday,December,False,True,962.1871428571429
+2025-12-11,1163.35,Final Exams,Thursday,December,False,True,969.51
+2025-12-12,1100.93,Final Exams,Friday,December,False,True,968.46
+2025-12-13,620.16,Final Exams,Saturday,December,True,True,959.1828571428571
+2025-12-14,479.76,Final Exams,Sunday,December,True,True,951.0828571428572
+2025-12-15,543.77,Regular,Monday,December,False,False,877.5914285714287
+2025-12-16,551.04,Regular,Tuesday,December,False,False,784.5071428571429
+2025-12-17,566.71,Regular,Wednesday,December,False,False,717.96
+2025-12-18,609.73,Regular,Thursday,December,False,False,638.8714285714286
+2025-12-19,545.21,Regular,Friday,December,False,False,559.4828571428571
+2025-12-20,98.15,Winter Break,Saturday,December,True,False,484.90999999999997
+2025-12-21,70.71,Winter Break,Sunday,December,True,False,426.4742857142857
+2025-12-22,167.14,Winter Break,Monday,December,False,False,372.67
+2025-12-23,159.46,Winter Break,Tuesday,December,False,False,316.73
+2025-12-24,167.14,Winter Break,Wednesday,December,False,False,259.6485714285715
+2025-12-25,156.63,Winter Break,Thursday,December,False,False,194.92
+2025-12-26,157.83,Winter Break,Friday,December,False,False,139.57999999999998
+2025-12-27,101.22,Winter Break,Saturday,December,True,False,140.01857142857142
+2025-12-28,66.41,Winter Break,Sunday,December,True,False,139.4042857142857
+2025-12-29,182.75,Winter Break,Monday,December,False,False,141.6342857142857
+2025-12-30,164.11,Winter Break,Tuesday,December,False,False,142.29857142857142
+2025-12-31,171.47,Winter Break,Wednesday,December,False,False,142.91714285714286

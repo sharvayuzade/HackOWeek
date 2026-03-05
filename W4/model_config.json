@@ -1,0 +1,78 @@
+<<<<<<< HEAD
+{
+  "Model Type": "Linear Regression",
+  "Features": [
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_lunch_hour",
+    "temperature",
+    "temp_squared",
+    "is_hot",
+    "is_cold",
+    "hour_sin",
+    "hour_cos",
+    "weather_sunny",
+    "weather_cloudy",
+    "weather_rainy"
+  ],
+  "Training Samples": 936,
+  "Test R\u00b2 Score": 0.9107054211851855,
+  "Test RMSE": "28.16045271645058",
+  "Test MAE": 22.848950339386437,
+  "Intercept": "215.43024311685124",
+  "Coefficients": {
+    "hour": 3.8473236956237256,
+    "day_of_week": 0.37846955795605064,
+    "is_weekend": -100.32129896874854,
+    "is_lunch_hour": 203.8322861596216,
+    "temperature": 0.4696647373517481,
+    "temp_squared": -0.007811673632248418,
+    "is_hot": 40.57162262584897,
+    "is_cold": 24.345839005394907,
+    "hour_sin": 41.86472198800612,
+    "hour_cos": 111.76733268795668,
+    "weather_sunny": -32.940473267812095,
+    "weather_cloudy": -3.1448025391834458,
+    "weather_rainy": 36.08527580699557
+  }
+=======
+{
+  "Model Type": "Linear Regression",
+  "Features": [
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_lunch_hour",
+    "temperature",
+    "temp_squared",
+    "is_hot",
+    "is_cold",
+    "hour_sin",
+    "hour_cos",
+    "weather_sunny",
+    "weather_cloudy",
+    "weather_rainy"
+  ],
+  "Training Samples": 936,
+  "Test R\u00b2 Score": 0.9107054211851855,
+  "Test RMSE": "28.16045271645058",
+  "Test MAE": 22.848950339386437,
+  "Intercept": "215.43024311685124",
+  "Coefficients": {
+    "hour": 3.8473236956237256,
+    "day_of_week": 0.37846955795605064,
+    "is_weekend": -100.32129896874854,
+    "is_lunch_hour": 203.8322861596216,
+    "temperature": 0.4696647373517481,
+    "temp_squared": -0.007811673632248418,
+    "is_hot": 40.57162262584897,
+    "is_cold": 24.345839005394907,
+    "hour_sin": 41.86472198800612,
+    "hour_cos": 111.76733268795668,
+    "weather_sunny": -32.940473267812095,
+    "weather_cloudy": -3.1448025391834458,
+    "weather_rainy": 36.08527580699557
+  }
+>>>>>>> d9b4b4a4536a0e284aa16b9056136bf271bd3a82
+}
