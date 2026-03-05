@@ -1,0 +1,261 @@
+:root {
+  --bg-1: #0f172a;
+  --bg-2: #0a0f1f;
+  --ink: #f8fafc;
+  --muted: #cbd5e1;
+  --card: rgba(10, 23, 47, 0.7);
+  --line: rgba(148, 163, 184, 0.25);
+  --primary: #14b8a6;
+  --primary-strong: #0d9488;
+  --accent: #f59e0b;
+  --danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+  background: radial-gradient(circle at 20% 10%, #183a5d 0%, var(--bg-1) 35%, var(--bg-2) 100%);
+  overflow-x: hidden;
+}
+
+.bg-blur {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-blur-1 {
+  width: 280px;
+  height: 280px;
+  background: #22d3ee;
+  top: -60px;
+  right: -50px;
+}
+
+.bg-blur-2 {
+  width: 320px;
+  height: 320px;
+  background: #f97316;
+  left: -110px;
+  bottom: -120px;
+}
+
+.shell {
+  position: relative;
+  z-index: 1;
+  width: min(980px, 92vw);
+  margin: 40px auto 64px;
+  display: grid;
+  gap: 22px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.06;
+}
+
+.eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  max-width: 70ch;
+  color: var(--muted);
+}
+
+.card {
+  background: linear-gradient(160deg, rgba(15, 28, 55, 0.75), var(--card));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 18px 40px rgba(3, 8, 20, 0.25);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.tab {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.tab.active {
+  color: #041018;
+  border-color: transparent;
+  background: var(--primary);
+}
+
+.form-panel {
+  display: none;
+}
+
+.form-panel.active {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 12px;
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+
+input:focus {
+  outline: 2px solid rgba(20, 184, 166, 0.4);
+  border-color: var(--primary);
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(120deg, var(--primary), #06b6d4);
+  color: #031015;
+}
+
+.btn.accent {
+  background: linear-gradient(120deg, var(--accent), #fb923c);
+  color: #1f1304;
+}
+
+.btn.ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: transparent;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.grid-2,
+.grid-3 {
+  display: grid;
+  gap: 12px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.message {
+  min-height: 20px;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+
+.message.error {
+  color: #fecaca;
+}
+
+.output {
+  margin-top: 14px;
+  white-space: pre-wrap;
+  background: rgba(2, 6, 23, 0.85);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  color: #bae6fd;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.88rem;
+  max-height: 280px;
+  overflow: auto;
+}
+
+.reveal {
+  animation: page-in 600ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.stagger {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: stagger-in 460ms ease forwards;
+}
+
+.stagger:nth-of-type(1) {
+  animation-delay: 60ms;
+}
+
+.stagger:nth-of-type(2) {
+  animation-delay: 150ms;
+}
+
+.stagger:nth-of-type(3) {
+  animation-delay: 240ms;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes stagger-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .shell {
+    margin-top: 24px;
+  }
+}

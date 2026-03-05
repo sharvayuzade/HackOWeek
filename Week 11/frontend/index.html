@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WearSync Secure Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-blur bg-blur-1"></div>
+    <div class="bg-blur bg-blur-2"></div>
+
+    <main class="shell reveal">
+      <header class="hero stagger">
+        <p class="eyebrow">Week 11</p>
+        <h1>WearSync Secure Portal</h1>
+        <p class="subtitle">
+          Signup/login with JWT and sync wearable health metrics into encrypted MongoDB records.
+        </p>
+      </header>
+
+      <section class="card stagger">
+        <div class="tabs" role="tablist" aria-label="Auth tabs">
+          <button id="tab-signup" class="tab active" type="button">Signup</button>
+          <button id="tab-login" class="tab" type="button">Login</button>
+        </div>
+
+        <form id="signup-form" class="form-panel active" autocomplete="off">
+          <label>
+            Full Name
+            <input id="signup-name" type="text" required placeholder="Aarav Sharma" />
+          </label>
+          <label>
+            Email
+            <input id="signup-email" type="email" required placeholder="aarav@college.edu" />
+          </label>
+          <label>
+            Password
+            <input id="signup-password" type="password" minlength="6" required placeholder="Minimum 6 characters" />
+          </label>
+          <button class="btn primary" type="submit">Create Account</button>
+        </form>
+
+        <form id="login-form" class="form-panel" autocomplete="off">
+          <label>
+            Email
+            <input id="login-email" type="email" required placeholder="aarav@college.edu" />
+          </label>
+          <label>
+            Password
+            <input id="login-password" type="password" required placeholder="Your password" />
+          </label>
+          <button class="btn primary" type="submit">Sign In</button>
+        </form>
+
+        <p id="auth-message" class="message" aria-live="polite"></p>
+      </section>
+
+      <section class="card stagger">
+        <h2>Wearable Sync</h2>
+        <form id="sync-form" autocomplete="off">
+          <div class="grid-2">
+            <label>
+              Provider
+              <input id="provider" type="text" required placeholder="Fitbit, Garmin, Apple Health" />
+            </label>
+            <label>
+              Device ID
+              <input id="device-id" type="text" required placeholder="DEVICE-7842" />
+            </label>
+          </div>
+
+          <div class="grid-3">
+            <label>
+              Steps
+              <input id="steps" type="number" min="0" required placeholder="9380" />
+            </label>
+            <label>
+              Avg Heart Rate
+              <input id="heart-rate" type="number" min="30" max="220" required placeholder="78" />
+            </label>
+            <label>
+              Sleep (hours)
+              <input id="sleep-hours" type="number" min="0" max="24" step="0.1" required placeholder="6.9" />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              SpO2 (%)
+              <input id="spo2" type="number" min="50" max="100" required placeholder="97" />
+            </label>
+            <label>
+              Stress Score (0-100)
+              <input id="stress" type="number" min="0" max="100" required placeholder="42" />
+            </label>
+          </div>
+
+          <button class="btn accent" type="submit">Sync Securely</button>
+        </form>
+
+        <div class="actions">
+          <button id="fetch-latest" class="btn ghost" type="button">Fetch Latest Synced Profile</button>
+          <button id="logout" class="btn ghost" type="button">Logout</button>
+        </div>
+
+        <p id="sync-message" class="message" aria-live="polite"></p>
+        <pre id="latest-output" class="output">No profile loaded yet.</pre>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
