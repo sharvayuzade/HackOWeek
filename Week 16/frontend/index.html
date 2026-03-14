@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 16 | Real-Time Alert System</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Week 16</p>
+          <h1>Real-Time Alert System</h1>
+          <p class="subtext">Encrypted anomaly notifications for live campus health streams.</p>
+        </div>
+        <div class="connection-card">
+          <p class="label">Socket</p>
+          <p id="socketStatus" class="status-pill status-pending">Connecting...</p>
+        </div>
+      </header>
+
+      <section class="controls">
+        <button id="seedBtn" class="btn btn-secondary">Seed Demo Data</button>
+        <button id="startSimBtn" class="btn">Start Live Simulator</button>
+        <button id="stopSimBtn" class="btn btn-secondary">Stop Simulator</button>
+        <button id="injectSpikeBtn" class="btn btn-danger">Inject High BPM Event</button>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Encrypted Alerts</h2>
+            <p id="alertCount" class="meta">0 received</p>
+          </div>
+          <ul id="alertList" class="list"></ul>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2>Live Stream Readings</h2>
+            <p id="readingCount" class="meta">0 readings</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Device</th>
+                  <th>BPM</th>
+                  <th>SpO2</th>
+                  <th>Temp</th>
+                </tr>
+              </thead>
+              <tbody id="readingTableBody"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
