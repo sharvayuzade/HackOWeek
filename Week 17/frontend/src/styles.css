@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #f5fbff;
+  --card: #ffffff;
+  --text: #153248;
+  --muted: #5e7588;
+  --line: #cde0ed;
+  --brand: #1f9cec;
+  --danger: #bd2f2f;
+  --danger-bg: #fff1f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #dcf2ff 0%, transparent 30%),
+    linear-gradient(180deg, #fafdff 0%, #eef8ff 100%);
+}
+
+.page-shell {
+  width: min(1200px, 94vw);
+  margin: 0 auto;
+  padding: 24px 0 34px;
+}
+
+.navbar {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 12px 24px rgba(15, 99, 153, 0.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-chip {
+  background: #e5f4ff;
+  color: #1667a0;
+  border: 1px solid #c3def1;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-family: "Sora", "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.brand-group h1 {
+  margin: 0;
+  font-family: "Sora", "IBM Plex Sans", sans-serif;
+  font-size: 1.25rem;
+}
+
+.brand-group p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-links a {
+  color: #256287;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.content-shell {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.stat-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  margin: 8px 0 0;
+  font-family: "Sora", "IBM Plex Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.stat-danger {
+  color: var(--danger);
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.panel-head h2 {
+  margin: 0;
+  font-family: "Sora", "IBM Plex Sans", sans-serif;
+  font-size: 1.05rem;
+}
+
+.panel-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.actions-row {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+}
+
+.token-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.token-input-wrap span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.token-input-wrap input {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 11px;
+  width: 240px;
+  font: inherit;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: "Sora", "IBM Plex Sans", sans-serif;
+  font-size: 0.87rem;
+  font-weight: 600;
+  background: var(--brand);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-muted {
+  background: #e7f3fc;
+  color: #1d5f8a;
+}
+
+.status-message {
+  margin: 10px 0 0;
+  font-size: 0.92rem;
+}
+
+.status-error {
+  color: var(--danger);
+}
+
+.table-wrap {
+  margin-top: 12px;
+  max-height: 480px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 6px;
+  text-align: left;
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #edf8ff;
+}
+
+.row-anomaly {
+  background: var(--danger-bg);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
