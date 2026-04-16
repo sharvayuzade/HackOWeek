@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIT Admission App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <main class="page">
+      <section class="hero card">
+        <div class="eyebrow">Week 20 Deployment Template</div>
+        <h1>SIT Admission App</h1>
+        <p>
+          A simple, direct-run admission portal template for GitHub upload, cloud deployment, and
+          multi-user demo data.
+        </p>
+
+        <div class="hero-meta">
+          <span>Express backend</span>
+          <span>Static frontend</span>
+          <span>HTTPS-ready</span>
+        </div>
+      </section>
+
+      <section class="grid">
+        <section class="card form-card">
+          <div class="section-head">
+            <h2>Submit Admission</h2>
+            <p>Use this form to create a sample application record.</p>
+          </div>
+
+          <form id="admission-form" class="form">
+            <label>
+              Full Name
+              <input id="fullName" name="fullName" type="text" placeholder="Aarav Sharma" required />
+            </label>
+
+            <div class="split">
+              <label>
+                Email
+                <input id="email" name="email" type="email" placeholder="aarav@sit.edu.in" required />
+              </label>
+
+              <label>
+                Phone
+                <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" />
+              </label>
+            </div>
+
+            <div class="split">
+              <label>
+                Program
+                <select id="course" name="course" required>
+                  <option value="">Choose a program</option>
+                  <option>B.Tech CSE</option>
+                  <option>BBA</option>
+                  <option>MBA</option>
+                  <option>MCA</option>
+                </select>
+              </label>
+
+              <label>
+                Intake Term
+                <input id="intakeTerm" name="intakeTerm" type="text" placeholder="2026 Spring" required />
+              </label>
+            </div>
+
+            <label>
+              Short Statement
+              <textarea
+                id="statement"
+                name="statement"
+                rows="4"
+                placeholder="Why do you want to join SIT?"
+                required
+              ></textarea>
+            </label>
+
+            <button class="button primary" type="submit">Submit Application</button>
+            <p id="status" class="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="card info-card">
+          <div class="section-head">
+            <h2>Live Snapshot</h2>
+            <p>API status and submitted application records.</p>
+          </div>
+
+          <div class="stats">
+            <div>
+              <span class="stat-label">Applications</span>
+              <strong id="totalApplications">0</strong>
+            </div>
+            <div>
+              <span class="stat-label">Latest Intake</span>
+              <strong id="latestIntake">--</strong>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <span class="stat-label">Program mix</span>
+            <div id="programMix" class="program-mix">No submissions yet.</div>
+          </div>
+
+          <div class="applications-head">
+            <h3>Recent Applications</h3>
+            <button id="refresh" class="button ghost" type="button">Refresh</button>
+          </div>
+
+          <div id="applications" class="applications"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

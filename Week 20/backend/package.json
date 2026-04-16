@@ -1,0 +1,18 @@
+{
+  "name": "week20-sit-admission-app",
+  "version": "1.0.0",
+  "description": "Simple SIT admission portal template for deployment demos",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "verify": "node --check src/server.js && node --check src/store.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  }
+}
